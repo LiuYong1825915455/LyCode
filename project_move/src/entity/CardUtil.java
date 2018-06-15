@@ -646,10 +646,9 @@ public class CardUtil {
 		try {
 			fr = new FileReader(file);
 			br = new BufferedReader(fr);
-			char[] words = new char[1];
-			int len = 0;
-			while((len = br.read(words)) != -1 ) {
-				System.out.println(br.readLine());
+			String str = null;
+			while((str = br.readLine()) != null ) {
+				System.out.println(str);
 			}
 			
 		} catch (Exception e) {
